@@ -1,0 +1,49 @@
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> 
+
+ 
+
+ 
+
+<script src="/__/firebase/7.14.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="/__/firebase/7.14.1/firebase-analytics.js"></script>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <script>
+
+   // Initialize Firebase
+
+   var config = {
+
+  apiKey: "AIzaSyBjRQb2aR2QY2tN22nEuUDmnDnMMcFUTnw",
+
+  authDomain: "airlines-register-and-login.firebaseapp.com",
+
+  databaseURL: "https://airlines-register-and-login.firebaseio.com",
+
+  projectId: "airlines-register-and-login",
+
+  storageBucket: "airlines-register-and-login.appspot.com",
+
+  messagingSenderId: "1042452549459"
+
+   };
+
+   firebase.initializeApp(config);
+
+ </script>

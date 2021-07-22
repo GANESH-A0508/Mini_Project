@@ -8,22 +8,74 @@
   <title>Dropdown Menu with Search Box | CodingNepal</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  <link rel="stylesheet" href="D:\mini project\style.css">
-  <link rel="stylesheet" href="D:\mini project\news_style.css">
-  <link rel="stylesheet" href="D:\mini project\footer.css">
-  <link rel="stylesheet" href="D:\mini project\navs_style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="news_style.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navs_style.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   
+
   
+  <!--firebase api heer-->
+
   
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> 
+
+ 
+
+ 
+
+<script src="/__/firebase/7.14.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="/__/firebase/7.14.1/firebase-analytics.js"></script>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <script>
+
+   // Initialize Firebase
+
+   var config = {
+
+  apiKey: "AIzaSyBjRQb2aR2QY2tN22nEuUDmnDnMMcFUTnw",
+
+  authDomain: "airlines-register-and-login.firebaseapp.com",
+
+  databaseURL: "https://airlines-register-and-login.firebaseio.com",
+
+  projectId: "airlines-register-and-login",
+
+  storageBucket: "airlines-register-and-login.appspot.com",
+
+  messagingSenderId: "1042452549459"
+
+   };
+
+   firebase.initializeApp(config);
+
+ </script>
   
 </head>
 <body>
   <div class="head">
-    <img src="D:\mini project\logo.jpg" alt="img + logo" style="width:100%; display: block;visibility: visible;height:300px;">
+    <img src="logo.jpg" alt="img + logo" style="width:100%; display: block;visibility: visible;height:300px;">
   </div>
     
   <div class="wrapper">
@@ -105,13 +157,13 @@
                
                   <div class="carousel-item active">
                
-                    <img class="d-inline w-100" src="D:\mini project\img1.jfif" alt="Slide One" style="height: 400px;width: 100%;" >
+                    <img class="d-inline w-100" src="https://c.ndtvimg.com/2021-05/v6lh6il_hyderabad-police-240_120x90_29_May_21.jpg" alt="Slide One" style="height: 400px;width: 100%;" >
                
                     <!--Captions for the slides go here -->
                
                       <div class="carousel-caption text-success d-none d-sm-block">
                
-                      <h5>The demo of using text in carousel Bootstrap</h5>
+                      <h5>The demo of using text in carousel</h5>
                
                       <p class="text-light">Another caption line goes here
                
@@ -127,13 +179,13 @@
                
                   <div class="carousel-item">
                
-                    <img class="d-inline w-100" src="D:\mini project\img1.jfif" alt="Slide Two"   style="height: 400px;width: 100%;">
+                    <img class="d-inline w-100" src="https://c.ndtvimg.com/jvda34c8_hyderabad-police-240_120x90_14_August_18.jpg" alt="Slide Two"   style="height: 400px;width: 100%;">
                
                     <!--Captions for the slides go here -->
                
                       <div class="carousel-caption text-white d-none d-sm-block">
                
-                      <h5>The demo of using text in carousel Bootstrap</h5>
+                      <h5>The demo of using text in carousel </h5>
                
                       <p class="text-light">Another caption line goes here
                
@@ -151,13 +203,13 @@
                
                   <div class="carousel-item">
                
-                    <img class="d-block w-100" src="D:\mini project\img1.jfif" alt="Slide Three"   style="height: 400px;width: 100%;">
+                    <img class="d-block w-100" src="https://s.yimg.com/ny/api/res/1.2/NvXalVdPX9Y62lmMGiR1OQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ3MDtjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/0hHREmvQ1xEJqE7MGN965g--~B/aD01NjA7dz04NDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/la_times_articles_853/7e5c2c46e5102464050f62fab7a1d311" alt="Slide Three"   style="height: 400px;width: 100%;">
                
                     <!--Captions for the slides go here -->
                
                       <div class="carousel-caption text-warning d-none d-sm-block">
                
-                      <h5>The demo of using text in carousel Bootstrap</h5>
+                      <h5>The demo of using text in carousel</h5>
                
                       <p class="text-light">Another caption line goes here
                
@@ -200,16 +252,16 @@
     
            <table style="display:inline;">
              <tr>
-               <td> <img src="D:\mini project\img1.jfif" alt=""></td>
-               <td> <b> <pre> PAKISTAN TERRARIST (VENKAT SAI)
-                Most dagerous criminal in pakistan. 
-                Age: 22year.  Crinimal Records:101,404,505,etc......</pre></b></td>
+               <td> <img src="https://img1.grunge.com/img/gallery/the-most-dangerous-criminals-to-ever-make-fbis-most-wanted-list/intro-1547226437.jpg" alt="" style="width: 200px;height:200px;"></td>
+               <td> <b> <pre> PAKISTAN TERRARIST (DURGAM GANESHS)
+              Most dagerous criminal in pakistan. 
+Age: 22year.  Crinimal Records:101,404,505,etc......</pre></b></td>
              </tr>
              <tr> 
-              <td> <img src="D:\mini project\img1.jfif" alt=""></td>
+              <td> <img src="https://tse3.mm.bing.net/th?id=OIP.RRmF2VEC6zpvNMX9NdouNgHaHa&pid=Api&P=0&w=300&h=300" alt=""  style="width: 200px;height:200px;"></td>
               <td> <b> <pre> PAKISTAN TERRARIST (VENKAT SAI)
-               Most dagerous criminal in pakistan. 
-               Age: 22year.  Crinimal Records:101,404,505,etc......</pre></b></td>
+             Most dagerous criminal in pakistan.
+ Age: 22year.  Crinimal Records:101,404,505,etc......</pre></b></td>
              </tr>
            </table>
             
@@ -250,10 +302,10 @@
       
                                   <div class="col-md-4 mb-3">
                                       <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="D:\mini project\Hawkeye.jpg">
+                                          <img class="img-fluid" alt="100%x280" src="https://www.drona.in/images/blogs/editor/ts-police-jobs-image.webp">
                                           <div class="card-body">
-                                              <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                              <h4 class="card-title">Suspects arrested following Old Sacramento shooting that killed 2, wounded 4 at waterfront</h4>
+                                              <p class="card-text" style="color:black">A Saturday afternoon update from police said that two men — Marcus Trull, 22, and Cedric Salcedo, 21 — were arrested in connection with the shooting. The two were detained during the initial investigation and later arrested on suspicion of murder.</p>
       
                                           </div>
       
@@ -261,20 +313,20 @@
                                   </div>
                                   <div class="col-md-4 mb-3">
                                       <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="D:\mini project\n1.jpg">
+                                          <img class="img-fluid" alt="100%x280" src="https://assets.thehansindia.com/h-upload/2021/05/12/500x300_1075977-wgl.webp">
                                           <div class="card-body">
-                                              <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                              <h4 class="card-title">Would-be victim shoots 2 armed men who tried to rob him, video shows</h4>
+                                              <p class="card-text" style="color:black">Two robbery suspects had the tables turned on them when the man they tried to hold up at gunpoint pulled a firearm and shot them, Los Angeles police said.</p>
       
                                           </div>
                                       </div>
                                   </div>
                                   <div class="col-md-4 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="‪D:\mini project\img1.jfif">
+                                        <img class="img-fluid" alt="100%x280" src="https://c.ndtvimg.com/jvda34c8_hyderabad-police-240_120x90_14_August_18.jpg">
                                         <div class="card-body">
-                                            <h4 class="card-title">Special title treatment</h4>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <h4 class="card-title">5 Arrested In Hyderabad For Murder, Robbery:</h4>
+                                            <p class="card-text" style="color:black">Hyderabad Police on Monday arrested five persons allegedly involved in the murder of a rowdy-sheeter as well as in a robbery case.</p>
     
                                         </div>
     
@@ -288,10 +340,10 @@
       
                                   <div class="col-md-4 mb-3">
                                       <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="‪D:\mini project\img1.jfif">
+                                          <img class="img-fluid" alt="100%x280" src="‪https://c.ndtvimg.com/2021-06/jicqoh6o_techiemurder240_120x90_29_June_21.jpg">
                                           <div class="card-body">
-                                              <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                              <h4 class="card-title">Arrested After CCTV Of Him With Suitcase, Cops Said Wife's Body Within</h4>
+                                              <p class="card-text" style="color:black">Days after the charred corpse of a 27-year-old techie was found in a suitcase in Andhra Pradesh's Tirupati, the police today arrested the woman's husband, who was seen on security footage carting the suitcase around.</p>
       
                                           </div>
       
@@ -299,20 +351,20 @@
                                   </div>
                                   <div class="col-md-4 mb-3">
                                       <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="D:\mini project\n1.jpg">
+                                          <img class="img-fluid" alt="100%x280" src="https://i.ndtvimg.com/i/2017-06/police-generic_240x180_51497845661.jpg">
                                           <div class="card-body">
-                                              <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                              <h4 class="card-title">2 Minor Girls From UP Taken To Hyderabad, Raped:</h4>
+                                              <p class="card-text" style="color:black">Two minor girls from Uttar Pradesh were allegedly kidnapped and taken to Hyderabad where they were raped, police said on Thursday.</p>
       
                                           </div>
                                       </div>
                                   </div>
                                   <div class="col-md-4 mb-3">
                                       <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="D:\mini project\n1.jpg">
+                                          <img class="img-fluid" alt="100%x280" src="https://c.ndtvimg.com/2021-05/v6lh6il_hyderabad-police-240_120x90_29_May_21.jpg">
                                           <div class="card-body">
-                                              <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                              <h4 class="card-title">Hyderabad Police Wears Covid-Shaped Helmets To Raise Awareness</h4>
+                                              <p class="card-text" style="color:black">In Hyderabad, police are seen donning helmets that are shaped like the coronavirus while patrolling the streets during the Covid-19 imposed lockdown.</p>
       
                                           </div>
                                       </div>
@@ -328,7 +380,7 @@
                                           <img class="img-fluid" alt="100%x280" src="D:\mini project\n1.jpg">
                                           <div class="card-body">
                                               <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                              <p class="card-text" style="color:black">With supporting text below as a natural lead-in to additional content.</p>
       
                                           </div>
       
@@ -339,7 +391,7 @@
                                           <img class="img-fluid" alt="100%x280" src="‪D:\mini project\img1.jfif">
                                           <div class="card-body">
                                               <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                              <p class="card-text" style="color:black">With supporting text below as a natural lead-in to additional content.</p>
       
                                           </div>
                                       </div>
@@ -349,7 +401,7 @@
                                           <img class="img-fluid" alt="100%x280" src="‪D:\mini project\Hawkeye.jpg">
                                           <div class="card-body">
                                               <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                              <p class="card-text" style="color:black">With supporting text below as a natural lead-in to additional content.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -376,7 +428,7 @@
               <div class="card-body">
                 <h5 class="card-title">Special title treatment Special</h5>
                 <div class="card-content">
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural</p>
+                  <p class="card-text" style="color:black">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
@@ -389,7 +441,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">Special title treatment Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text" style="color:black">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
@@ -401,7 +453,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">Special title treatment Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text" style="color:black">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
@@ -413,7 +465,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">Special title treatment Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"  style="color:black">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
@@ -425,7 +477,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">Special title treatment Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text" style="color:black">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
@@ -437,7 +489,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">Special title treatment Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text" style="color:black">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
@@ -496,7 +548,7 @@
                     <!-- End Footer info -->
                     <div class="footer-awarad">
                         <img src="images/icon/best.png" alt="">
-                        <p>Best Design Company 2019</p>
+                        <p>Best Website for all people  </p>
                     </div>
                 </div>
                 <!-- End Col -->

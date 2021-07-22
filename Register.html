@@ -36,7 +36,148 @@ opacity:1;
 <label for="name"><b>Name:</b></label>
 <input type="text" name="name" placeholder="example:abc" required>
 
+<label for="username"><b>Username:</b></label><!DOCTYPE html>
+<html>
+<head>
+<title> my webpage2 </title>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> 
+ 
+ 
+<script src="/__/firebase/7.14.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.14.1/firebase-analytics.js"></script>
+ 
+ 
+ 
+ 
+ 
+ 
+ <script>
+   // Initialize Firebase
+   var config = {
+  apiKey: "AIzaSyBjRQb2aR2QY2tN22nEuUDmnDnMMcFUTnw",
+  authDomain: "airlines-register-and-login.firebaseapp.com",
+  databaseURL: "https://airlines-register-and-login.firebaseio.com",
+  projectId: "airlines-register-and-login",
+  storageBucket: "airlines-register-and-login.appspot.com",
+  messagingSenderId: "1042452549459"
+   };
+
+   firebase.initializeApp(config);
+ </script>
+
+
+
+
+<style type="text/css">
+body{
+font-family: georgia;
+background-color: lightgrey;
+color: black;
+}
+
+
+.registerbtn
+{
+background-color: green;
+color:white;
+padding:16px 20px;
+margin:8px 0;
+border: none;
+cursor: pointer;
+width:50%;
+opacity:0.9;
+}
+.registerbtn:hover{
+opacity:1;
+}
+</style>
+</head>
+<body>
+<center>
+<h1><u><b>User Registration Form</u></b></h1>
+<br>
+<p>Please fill the below form in order to register:</p><br>
+<div id="regform">
+<form action="" method="">
+<label for="name"><b>Name:</b></label>
+<input type="text" name="name" id="name" placeholder="example:abc" required>
+
 <label for="username"><b>Username:</b></label>
+<input type="text" id="uname" name="username" placeholder="example:xyz" required>
+<br><br>
+<div>
+<p><b>Gender:</b></p>
+<label for="genermale">Male</label>
+<input type="radio" name="gender" value="choice1" id="male">
+
+<label for="generfemale">Female</label>
+<input type="radio" name="gender" id="female" value="choice1">
+
+<label for="others">Others</label>
+<input type="radio" name="gender" id="other" value="choice1">
+</div>
+<br><br>
+<div>
+<label for="email"><b>Email Id:</b></label>
+<input type="email" name="email" placeholder="example:xyz@email.com" id="email"  required>
+
+
+</div>
+<br><br>
+<div>
+<label for="dob"><b>Birthday:</b></label>
+<input type="date" id="dob" name="dob">
+</div>
+<br><br><div>
+<label for="phno"><b>PhoneNumber:</b></label>
+<input type="number" name="phno" id="num">
+</div><br><br>
+<div>
+<label for="add1"><b>Address1:</b></label>
+<textarea id="add1" name="add1" rows="3" cols="40">
+Enter address1 here...</textarea><br>
+
+<label for="add2"><b>Address2:</b></label>
+<textarea id="add2" name="add2" rows="3" cols="40">
+Enter address2 here...</textarea><br>
+</div>
+<br><br>
+<div>
+<p><b>Upload your photo:</b></p>
+<input type="file" id="myfile" name="filename">
+<input type="submit">
+</div>
+<br><br><div>
+<label for="password"><b>Password:</b></label>
+<input type="password" name="password" id="pswd">
+
+<label for="cpassword"><b>Confirm Password:</b></label>
+<input type="cpassword" name="cpassword">
+</div><br><br>
+<div>
+<label for="describe"><b>Describe yourself:</b></label>
+<textarea id="describe" name="describe" rows="8" cols="50"  >
+...</textarea><br>
+</div>
+<!--<label for="agree">I agree to all the norms and conditions</label>
+<input type="checkbox" name="agree">!-->
+<br><br><br>
+<button type="Register" class="registerbtn"><b>Register</b></button>
+
+
+
+
+</div>
+
+</form>
+
+</div>
+</center>
 <input type="text" name="username" placeholder="example:xyz" required>
 <br><br>
 <div>

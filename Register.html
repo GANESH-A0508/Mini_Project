@@ -1,250 +1,451 @@
 <!DOCTYPE html>
-<html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
 <head>
-<title> my webpage2 </title>
-<style type="text/css">
-body{
-font-family: georgia;
-background-color: lightgrey;
-color: black;
-}
-
-
-.registerbtn
-{
-background-color: green;
-color:white;
-padding:16px 20px;
-margin:8px 0;
-border: none;
-cursor: pointer;
-width:50%;
-opacity:0.9;
-}
-.registerbtn:hover{
-opacity:1;
-}
-</style>
-</head>
-<body>
-<center>
-<h1><u><b>User Registration Form</u></b></h1>
-<br>
-<p>Please fill the below form in order to register:</p><br>
-<div id="regform">
-<form action="" method="">
-<label for="name"><b>Name:</b></label>
-<input type="text" name="name" placeholder="example:abc" required>
-
-<label for="username"><b>Username:</b></label><!DOCTYPE html>
-<html>
-<head>
-<title> my webpage2 </title>
-
-
-<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dropdown Menu with Search Box | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="news_style.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navs_style.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://github.com/GANESH-A0508/Mini_Project/blob/main/style.css">
+  <link rel="stylesheet" href="https://github.com/GANESH-A0508/Mini_Project/blob/main/news_style.css">
+  <link rel="stylesheet" href="https://github.com/GANESH-A0508/Mini_Project/blob/main/footer.css">
+  <link rel="stylesheet" href="https://github.com/GANESH-A0508/Mini_Project/blob/main/navs_style.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="register.css"></script>
  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  
+  <!--firebase api heer-->
+
+  
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> 
+
+ 
+
+ 
+
 <script src="/__/firebase/7.14.1/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
+
      https://firebase.google.com/docs/web/setup#available-libraries -->
+
 <script src="/__/firebase/7.14.1/firebase-analytics.js"></script>
+
  
+
  
+
  
+
  
+
  
+
  
+
  <script>
+
    // Initialize Firebase
+
    var config = {
+
   apiKey: "AIzaSyBjRQb2aR2QY2tN22nEuUDmnDnMMcFUTnw",
+
   authDomain: "airlines-register-and-login.firebaseapp.com",
+
   databaseURL: "https://airlines-register-and-login.firebaseio.com",
+
   projectId: "airlines-register-and-login",
+
   storageBucket: "airlines-register-and-login.appspot.com",
+
   messagingSenderId: "1042452549459"
+
    };
 
    firebase.initializeApp(config);
+
  </script>
-
-
-
-
-<style type="text/css">
-body{
-font-family: georgia;
-background-color: lightgrey;
-color: black;
-}
-
-
-.registerbtn
-{
-background-color: green;
-color:white;
-padding:16px 20px;
-margin:8px 0;
-border: none;
-cursor: pointer;
-width:50%;
-opacity:0.9;
-}
-.registerbtn:hover{
-opacity:1;
-}
-</style>
+  
 </head>
 <body>
-<center>
-<h1><u><b>User Registration Form</u></b></h1>
-<br>
-<p>Please fill the below form in order to register:</p><br>
-<div id="regform">
-<form action="" method="">
-<label for="name"><b>Name:</b></label>
-<input type="text" name="name" id="name" placeholder="example:abc" required>
+  <div class="head">
+    <img src="logo.jpg" alt="img + logo" style="width:100%; display: block;visibility: visible;height:300px;">
+  </div>
+    
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo">
+       <!--   <a href="#">CodingNepal</a>
+          -->
+          </div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#" class="desktop-link">Wings</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Wings</label>
+            <ul>
+              <li><a href="#">Task Force🦯</a></li>
+              <li><a href="#">Detective Department🦯</a></li>
+              <li><a href="#">Cyber Crime🖥️</a></li>
+              <li><a href="#">Traffic Police 🚓</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Register</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Register</label>
+           <!-- <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li>
+                <a href="#" class="desktop-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items</label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li>
+            </ul> -->
+          </li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
 
-<label for="username"><b>Username:</b></label>
-<input type="text" id="uname" name="username" placeholder="example:xyz" required>
-<br><br>
-<div>
-<p><b>Gender:</b></p>
-<label for="genermale">Male</label>
-<input type="radio" name="gender" value="choice1" id="male">
 
-<label for="generfemale">Female</label>
-<input type="radio" name="gender" id="female" value="choice1">
+  <br>
+  
 
-<label for="others">Others</label>
-<input type="radio" name="gender" id="other" value="choice1">
+
+  <div class="container" style="margin-top: 2px;">
+
+	<center>
+		<h1><u><b>User Registration Form</u></b></h1>
+		<br>
+		<p style="color: black;">Please fill the below form in order to register:</p><br>
+		<div id="regform">
+		<form action="" method="">
+		<label for="name"><b>Name:</b></label>
+		<input type="text" name="name" placeholder="example:abc" required>
+		
+		<label for="username"><b>Username:</b></label>
+		<input type="text" name="username" placeholder="example:xyz" required>
+		<br><br>
+		<div>
+		<p style="color: black;"><b>Gender:</b></p>
+		<label for="genermale">Male</label>
+		<input type="radio" name="gender" value="choice1">
+		
+		<label for="generfemale">Female</label>
+		<input type="radio" name="gender" value="choice1">
+		
+		<label for="others">Others</label>
+		<input type="radio" name="gender" value="choice1">
+		</div>
+		<br><br>
+		<div>
+		<label for="email"><b>Email Id:</b></label>
+		<input type="email" name="email" placeholder="example:xyz@email.com" required>
+		
+		
+		</div>
+		<br><br>
+		<div>
+		<label for="dob"><b>Birthday:</b></label>
+		<input type="date" id="dob" name="dob">
+		</div>
+		<br><br><div>
+		<label for="phno"><b>PhoneNumber:</b></label>
+		<input type="number" name="phno">
+		</div><br><br>
+		<div>
+		<label for="add1"><b>Address1:</b></label>
+		<textarea id="add1" name="add1" rows="3" cols="40">
+		Enter address1 here...</textarea><br>
+		
+		<label for="add2"><b>Address2:</b></label>
+		<textarea id="add2" name="add2" rows="3" cols="40">
+		Enter address2 here...</textarea><br>
+		</div>
+		<br><br>
+		<div>
+		<p style="color: black;"><b>Upload your photo:</b></p>
+		<input type="file" id="myfile" name="filename">
+		<input type="submit">
+		</div>
+		<br><br><div>
+		<label for="password"><b>Password:</b></label>
+		<input type="password" name="password">
+		
+		<label for="cpassword"><b>Confirm Password:</b></label>
+		<input type="cpassword" name="cpassword">
+		</div><br><br>
+		<div>
+		<label for="describe"><b>Describe yourself:</b></label>
+		<textarea id="describe" name="describe" rows="8" cols="50">
+		...</textarea><br>
+		</div>
+		<!--<label for="agree">I agree to all the norms and conditions</label>
+		<input type="checkbox" name="agree">!-->
+		<br><br><br>
+		<button type="Register" class="registerbtn"><b>Register</b></button>
+		
+		
+		
+		
+		</div>
+		
+		</form>
+		
+		</div>
+		</center>
+
 </div>
-<br><br>
-<div>
-<label for="email"><b>Email Id:</b></label>
-<input type="email" name="email" placeholder="example:xyz@email.com" id="email"  required>
 
+<br> <br><br> <br> <br><br>
+
+
+
+
+
+
+
+
+      <!--footer start here-->
+
+      <footer id="dk-footer" class="dk-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="dk-footer-box-info">
+                        <a href="index.html" class="footer-logo">
+                            <img src="‪D:\mini project\img1.jfif" alt="footer_logo" class="img-fluid">
+                        </a>
+                        <p class="footer-info-text">
+                           Reference site about online complaint, giving information on its origins, as well as a FIR generator.
+                        </p>
+                        <div class="footer-social-link">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Social link -->
+                    </div>
+                    <!-- End Footer info -->
+                    <div class="footer-awarad">
+                        <img src="images/icon/best.png" alt="">
+                        <p>Best Website for all people  </p>
+                    </div>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>Hyderabad India</h3>
+                                    <p>VNRVJIET College</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>8367430227</h3>
+                                    <p>Give us a call</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Contact Row -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <div class="section-heading">
+                                    <h3>Useful Links</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Our Team</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">Contact us</a>
+                                    </li>
+                              
+                                    <li>
+                                        <a href="#">Faq</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <!-- End col -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget">
+                                <div class="section-heading">
+                                    <h3>Subscribe</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <p><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                                Reference site about Online complaint, giving information on its origins, as well.</p>
+                                <form action="#">
+                                    <div class="form-row">
+                                        <div class="col dk-footer-form">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                            <button type="submit">
+                                                <i class="fa fa-send"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- End form -->
+                            </div>
+                            <!-- End footer widget -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Widget Row -->
+        </div>
+        <!-- End Contact Container -->
+
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Copyright © 2019, All Right Reserved VNRVJIET</span>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="copyright-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Copyright Container -->
+        </div>
+        <!-- End Copyright -->
+        <!-- Back to top -->
+        <div id="back-to-top" class="back-to-top">
+            <button class="btn btn-dark" title="Back to Top" style="display: block;">
+                <i class="fa fa-angle-up"></i>
+            </button>
+        </div>
+        <!-- End Back to top -->
+</footer>
+
+<!--footer end here-->
+  
 
 </div>
-<br><br>
-<div>
-<label for="dob"><b>Birthday:</b></label>
-<input type="date" id="dob" name="dob">
-</div>
-<br><br><div>
-<label for="phno"><b>PhoneNumber:</b></label>
-<input type="number" name="phno" id="num">
-</div><br><br>
-<div>
-<label for="add1"><b>Address1:</b></label>
-<textarea id="add1" name="add1" rows="3" cols="40">
-Enter address1 here...</textarea><br>
 
-<label for="add2"><b>Address2:</b></label>
-<textarea id="add2" name="add2" rows="3" cols="40">
-Enter address2 here...</textarea><br>
-</div>
-<br><br>
-<div>
-<p><b>Upload your photo:</b></p>
-<input type="file" id="myfile" name="filename">
-<input type="submit">
-</div>
-<br><br><div>
-<label for="password"><b>Password:</b></label>
-<input type="password" name="password" id="pswd">
-
-<label for="cpassword"><b>Confirm Password:</b></label>
-<input type="cpassword" name="cpassword">
-</div><br><br>
-<div>
-<label for="describe"><b>Describe yourself:</b></label>
-<textarea id="describe" name="describe" rows="8" cols="50"  >
-...</textarea><br>
-</div>
-<!--<label for="agree">I agree to all the norms and conditions</label>
-<input type="checkbox" name="agree">!-->
-<br><br><br>
-<button type="Register" class="registerbtn"><b>Register</b></button>
-
-
-
-
-</div>
-
-</form>
-
-</div>
-</center>
-<input type="text" name="username" placeholder="example:xyz" required>
-<br><br>
-<div>
-<p><b>Gender:</b></p>
-<label for="genermale">Male</label>
-<input type="radio" name="gender" value="choice1">
-
-<label for="generfemale">Female</label>
-<input type="radio" name="gender" value="choice1">
-
-<label for="others">Others</label>
-<input type="radio" name="gender" value="choice1">
-</div>
-<br><br>
-<div>
-<label for="email"><b>Email Id:</b></label>
-<input type="email" name="email" placeholder="example:xyz@email.com" required>
-
-
-</div>
-<br><br>
-<div>
-<label for="dob"><b>Birthday:</b></label>
-<input type="date" id="dob" name="dob">
-</div>
-<br><br><div>
-<label for="phno"><b>PhoneNumber:</b></label>
-<input type="number" name="phno">
-</div><br><br>
-<div>
-<label for="add1"><b>Address1:</b></label>
-<textarea id="add1" name="add1" rows="3" cols="40">
-Enter address1 here...</textarea><br>
-
-<label for="add2"><b>Address2:</b></label>
-<textarea id="add2" name="add2" rows="3" cols="40">
-Enter address2 here...</textarea><br>
-</div>
-<br><br>
-<div>
-<p><b>Upload your photo:</b></p>
-<input type="file" id="myfile" name="filename">
-<input type="submit">
-</div>
-<br><br><div>
-<label for="password"><b>Password:</b></label>
-<input type="password" name="password">
-
-<label for="cpassword"><b>Confirm Password:</b></label>
-<input type="cpassword" name="cpassword">
-</div><br><br>
-<div>
-<label for="describe"><b>Describe yourself:</b></label>
-<textarea id="describe" name="describe" rows="8" cols="50">
-...</textarea><br>
-</div>
-<!--<label for="agree">I agree to all the norms and conditions</label>
-<input type="checkbox" name="agree">!-->
-<br><br><br>
-<button type="Register" class="registerbtn"><b>Register</b></button>
-
-
-
-
-</div>
-
-</form>
-
-</div>
-</center>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
